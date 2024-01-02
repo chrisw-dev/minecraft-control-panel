@@ -21,7 +21,7 @@ class AuthComponent extends Component {
     return (
       <div>
         <GoogleLogin
-          clientId="YOUR_CLIENT_ID"
+          clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
           buttonText="Login with Google"
           onSuccess={this.responseGoogle}
           onFailure={this.responseGoogle}
